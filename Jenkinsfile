@@ -12,7 +12,7 @@ pipeline {
         stage('Run Code3.py') {
             steps {
                 // Run the Python script
-                bat'py home.py'
+                bat'py /directory1/code3.py'
             }
         }
     }
