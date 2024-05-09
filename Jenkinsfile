@@ -12,7 +12,7 @@ pipeline {
         stage('Run Code3.py') {
             steps {
                 // Run the Python script
-                bat'C:\Program Files\Python312 hoem.py'
+                bat'C:\Program Files\Python312 home.py'
             }
         }
     }
