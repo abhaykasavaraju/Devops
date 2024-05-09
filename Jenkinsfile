@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Code3.py') {
             steps {
-		dir(directory1) {
+		dir('directory1') {
 			// Run the Python script
                 	bat'py code3.py'
 		}
