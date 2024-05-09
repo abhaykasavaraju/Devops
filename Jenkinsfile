@@ -11,10 +11,8 @@ pipeline {
 
         stage('Run Code3.py') {
             steps {
-                dir('directory1') {
-                    // Run the Python script
-                    sh 'python code3.py'
-                }
+                // Run the Python script
+                sh 'python Devops/directory1/code3.py'
             }
         }
     }
