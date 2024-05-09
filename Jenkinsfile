@@ -5,14 +5,14 @@ pipeline {
         stage('version') {
             steps {
                 // Checkout the code from the GitHub repository
-                sh 'python3 --version'
+                bat'python --version'
             }
         }
 
         stage('Run Code3.py') {
             steps {
                 // Run the Python script
-                sh 'python3 home.py'
+                bat'python /directory1/code3.py'
             }
         }
     }
