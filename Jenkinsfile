@@ -2,17 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('version') {
             steps {
                 // Checkout the code from the GitHub repository
-                git 'https://github.com/abhaykasavaraju/Devops.git'
+                sh 'python --version'
             }
         }
 
         stage('Run Code3.py') {
             steps {
                 // Run the Python script
-                sh 'python Devops/directory1/code3.py'
+                sh 'python /directory1/code3.py'
             }
         }
     }
